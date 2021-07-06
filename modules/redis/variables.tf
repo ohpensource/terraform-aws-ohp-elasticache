@@ -5,8 +5,8 @@ variable "enable_module" {
 }
 
 variable "name" {
-  type    = string
-} 
+  type = string
+}
 
 variable "subnets" {
   type        = list(string)
