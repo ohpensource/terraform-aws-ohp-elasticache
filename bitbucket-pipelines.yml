@@ -66,14 +66,14 @@ pipelines:
   pull-requests:
     "{*/*}":
       - parallel:
-          # - step: *check-commits
+          - step: *check-commits
           - step: *tfm-init
           # - step: *standard-elasticache-e2e-create-artifact
       - step: *standard-elasticache-e2e-tfm-plan
   branches:
     feature/*:      
       - parallel:
-          # - step: *check-commits
+          #- step: *check-commits
           - step: *tfm-init
       - step: *standard-elasticache-e2e-tfm-plan
     main:
