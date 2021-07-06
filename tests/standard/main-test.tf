@@ -1,3 +1,6 @@
+data "aws_caller_identity" "current" {}
+data "aws_region" "current" {}
+
 variable "group" {
   description = "only variable to group resources under the same prefix"
   type        = string
